@@ -415,15 +415,21 @@ letter-spacing: 0.025em;
 .schedule_nav{
     width: 920px;
     margin: 0 auto;
-    font-family: Roboto;
-line-height: 1.2;
-font-weight: 300;
-text-transform: uppercase;
-color: #ffffff;
-font-size: 16px;
 display: flex;
 justify-content: space-between;
 position: relative;
+}
+.schedule_nav a{
+    font-family: Roboto;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.schedule a.active{
+    font-weight: 700;
 }
 .schedule_nav>li{
     padding: 0 0 30px 0;
@@ -434,17 +440,10 @@ position: relative;
     top: 100%;
     display: grid;
     grid-template-columns: 285px 285px;
-    opacity: 0;
     pointer-events: none;
 }
-.schedule_nav>li:hover ul{
-    opacity: 1;
-    pointer-events: all;
-    transition: all 0.5s ease-in;
-}
-.schedule_nav>li:hover{
-    font-weight: 700;
-}
+
+
 .schedule_nav ul>li{
     background: #b8b2b2;
     margin: 0 30px 15px 0 ;
@@ -912,6 +911,8 @@ color: #ffffff;
 margin: 0 0 15px 0;
 }
 .social{
+    position: relative;
+    z-index: 15;
     font-size: 0;
 }
 .social li{
