@@ -3,6 +3,10 @@
 
 /* main style */
 
+a{
+    color: #ffffff; 
+    text-decoration: none;
+}
  .wrapper{
     width: 1110px;
     padding: 0 15px;
@@ -14,7 +18,6 @@
     background: url('../img/css_sprites.png');
 }
 h1{
-    font-family: Raleway;
 font-size: 24px;
 line-height: 1.2;
 font-weight: 900;
@@ -33,12 +36,10 @@ h1 img{
     height: 39px;
 }
 h2{
-    font-family: Raleway;
 font-size: 72px;
 font-weight: 900;
 text-transform: uppercase;
 letter-spacing: 0.015em;
-color: #ffffff;
 position: relative;
 
 }
@@ -48,7 +49,6 @@ h2+p{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #ffffff;
     position: relative;
 }
 h3{
@@ -58,7 +58,7 @@ line-height: 1.2;
 font-weight: 400;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
+
 }
 h4{
     font-family: Raleway;
@@ -67,7 +67,7 @@ line-height: 1.2;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
+
 }
 li a{
     display: block;
@@ -111,7 +111,8 @@ li a{
     background-color: black;
     box-shadow: 0px -12px 14px 23px rgba(0,0,0,1);
     z-index: 5;
-   
+    font-family: Raleway;
+    color: #ffffff;
  }
 header .wrapper{
     padding: 45px 0;
@@ -175,13 +176,11 @@ transform: skew(45deg);
     position: relative;
  }
  .header_content_singup div{
-    font-family: Raleway;
 font-size: 30px;
 line-height: 1.2;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
  }
  .header_content_singup a{
     display: inline-block;
@@ -195,7 +194,6 @@ line-height: 1.2;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
  }
  .trapec{
     z-index: 5;
@@ -212,13 +210,19 @@ color: #ffffff;
    transform: skewY(-8deg);
    transform-origin: left;
     background: radial-gradient(circle at top left, #1f181a 0%, black 100%);
-    padding: 5px 0 100px 0;
+    padding: 15px 0 100px 0;
     position: relative;
+    color: #ffffff;
+    font-family: Roboto;
     
+}
+.about_us h4{
+    margin: 0 0 30px 0;
 }
 
 .about_us .wrapper{
     transform: skewY(8deg);
+    margin-top: -10px;
 }
 
 .about_us nav>ul{
@@ -232,11 +236,9 @@ font-size: 14px;
 
 }
 .about_us nav>ul li a{
-    font-family: Roboto;
     line-height: 1.2;
     font-weight: 300;
     text-transform: uppercase;
-    color: #ffffff;
     text-decoration: none;
 }
 .about_us_content{
@@ -248,17 +250,17 @@ font-size: 14px;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     text-align: center;
+    margin-top: -50px;
 }
 .about_us article {
     width: 445px;
 }
 .about_us article p {
-    font-family: Roboto;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 300;
     letter-spacing: 0.025em;
-    color: #ffffff;
+
 }
 .about_us article p+p {
 margin: 20px 0 0 0 ;
@@ -289,6 +291,7 @@ margin: 20px 0 0 0 ;
     position: relative;
     font-size: 0;
     z-index: 5;
+    color: #ffffff;
     
 }
 .gallery .wrapper{
@@ -335,6 +338,7 @@ margin: 20px 0 0 0 ;
     background: radial-gradient(circle, #1f181a 10%, black 100%); 
      overflow: hidden;
      color: #ffffff;
+     font-family: Raleway;
 }
 .schedule_ahead{
     padding: 170px 0 0 0 ;
@@ -351,14 +355,12 @@ line-height: 1.2;
 font-weight: 300;
 text-transform: uppercase;
 letter-spacing: 0.05em;
-color: #ffffff;
 }
 .schedule_ahead>div{
     position: relative;
     z-index: 5;
 }
 .schedule_ahead h2{
-    font-family: Raleway;
     font-size: 36px;
     font-weight: 800;
 
@@ -366,7 +368,7 @@ color: #ffffff;
 .schedule_ahead a{
     cursor: pointer;
     margin: 30px 0 95px;
-    padding: 15px 40px;
+    padding: 11px 25px;
     background-color: #af1c1a;
     display: inline-block;
     font-family: Roboto;
@@ -375,11 +377,9 @@ line-height: 1.2;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
 text-decoration: none;
 }
 .schedule_ahead h3{
-    font-family: Raleway;
 font-size: 24px;
 line-height: 1.2;
 font-weight: 700;
@@ -424,7 +424,6 @@ position: relative;
     line-height: 1.2;
     font-weight: 300;
     text-transform: uppercase;
-    color: #ffffff;
     font-size: 16px;
     text-decoration: none;
 }
@@ -504,7 +503,6 @@ letter-spacing: 0.025em;
 margin: 0 30px 0 0 ;
 }
 .calendar_head h2{
-    font-family: Raleway;
 font-size: 24px;
 line-height: 1.2;
 font-weight: 700;
@@ -595,6 +593,7 @@ font-weight: 700;
     z-index: 15;
     transform-origin: left;
     background: #af1c1a;
+    color: #ffffff;
    
 }
 .price .wrapper{
@@ -656,6 +655,8 @@ color: #ffffff;
     background: radial-gradient(circle, #1f181a 10%, black 100%); 
      overflow: hidden;
      box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+     font-family: Roboto;
+     color: #ffffff;   
 }
 .team .wrapper{
     padding: 250px 0 75px 0;
@@ -736,13 +737,10 @@ color: #ffffff;
 
 
 .article_description p{
-    font-family: Roboto;
 font-size: 16px;
 line-height: 1.2;
 font-weight: 300;
 letter-spacing: 0.005em;
-color: #ffffff;
-
 }
 .article_arrows a+a{
     margin: 47px 0 0 0 ;
@@ -754,12 +752,11 @@ color: #ffffff;
     margin: 15px 0;
 }
 .team_article h5{
-    font-family: Roboto;
 font-size: 18px;
 line-height: 1.2;
 font-weight: 700;
 letter-spacing: 0.025em;
-color: #ffffff;
+
 }
 
 .team img{
@@ -786,6 +783,8 @@ box-shadow: -16px 10px 5px 0px rgba(0,0,0,0.75);
     background-size: cover;
     position: relative;
    z-index: 5;
+   font-family: Roboto;
+   color: #ffffff;
 }
 
 .contact .wrapper {
@@ -796,12 +795,11 @@ box-shadow: -16px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 80px 100px 20px 100px;
 }
 .contact h3{
-    font-family: Roboto;
 font-size: 30px;
 line-height: 1.2;
 font-weight: 300;
 letter-spacing: 0.01em;
-color: #ffffff;
+
 text-transform: none;
 }
 .contact p{
@@ -811,7 +809,7 @@ line-height: 1.2;
 font-weight: 800;
 text-transform: uppercase;
 letter-spacing: 0.05em;
-color: #ffffff;
+
 }
 .contact form{
     padding: 50px 0 45px 0;
@@ -826,7 +824,6 @@ color: #ffffff;
     width: 250px;
     height: 30px;
     border: none;
-    font-family: Roboto;
 font-size: 16px;
 line-height: 1.2;
 font-weight: 300;
@@ -835,7 +832,6 @@ font-style: italic;
 }
 
 .contact form textarea{
-    font-family: Roboto;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 300;
@@ -851,7 +847,6 @@ input[type="submit"]{
 height: 39px;
 border: 2px solid #ffffff;
     background: transparent;
-    font-family: Roboto;
 font-size: 14px;
 line-height: 1.2;
 font-weight: 700;
@@ -859,6 +854,9 @@ text-transform: uppercase;
 letter-spacing: 0.025em;
 color: #fefefe;
 margin: 15px 0 0 0;
+}
+input[type="submit"]:hover{
+  background: #481c1c;
 }
 .main_contacts{
 display: flex;
@@ -879,11 +877,9 @@ margin: 0 0 45px 0;
     position: relative;
     padding: 0px 0 0 42px;
     display: inline-block;
-    font-family: Roboto;
 font-size: 16px;
 font-weight: 300;
 letter-spacing: 0.01em;
-color: #ffffff;
 text-decoration: none;
 }
 a.one_row{
@@ -901,13 +897,11 @@ border-radius: 50%;
 border: 1px solid white;
 }
 .contact h5{
-    font-family: Roboto;
 font-size: 16px;
 line-height: 1.2;
 font-weight: 700;
 text-transform: uppercase;
 letter-spacing: 0.025em;
-color: #ffffff;
 margin: 0 0 15px 0;
 }
 .social{
