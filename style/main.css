@@ -657,10 +657,10 @@ color: #ffffff;
      overflow: hidden;
      box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
      font-family: Roboto;
-     color: #ffffff;   
+     color: #ffffff;
 }
 .team .wrapper{
-    padding: 250px 0 75px 0;
+    padding: 50px 0 75px 0;
 }
 .arrows{
     margin: 25px 0 0 0;
@@ -831,7 +831,9 @@ font-weight: 300;
 font-style: italic;
 
 }
-
+input:focus,textarea:focus{
+    outline: none;
+}
 .contact form textarea{
     font-size: 16px;
     line-height: 1.2;
@@ -842,6 +844,7 @@ font-style: italic;
    height: 75px;
    resize: none;
 }
+
 input[type="submit"]{
     cursor: pointer;
     width: 115px;
@@ -876,27 +879,14 @@ margin: 0 0 45px 0;
 .main_contacts a{
     text-align: start;
     position: relative;
-    padding: 0px 0 0 42px;
-    display: inline-block;
+
 font-size: 16px;
 font-weight: 300;
 letter-spacing: 0.01em;
 text-decoration: none;
 }
-a.one_row{
-    padding: 8px 0 8px 42px;
-}
-.main_contacts a::before{
-content: '';
-height: 32px;
-width: 32px;
-position: absolute;
-left: 0;
-top: 50%;
-transform: translateY(-50%);
-border-radius: 50%;
-border: 1px solid white;
-}
+
+
 .contact h5{
 font-size: 16px;
 line-height: 1.2;
@@ -918,7 +908,24 @@ margin: 0 0 15px 0;
     height: 30px;
     border-radius: 50%;
     margin-right: 2px;
-    border: 1px solid white;
+   background: url('../img/css_sprites.png');
+   background-position:-420px -126px ;
+}
+.social li+li>a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 2px;
+   background: url('../img/css_sprites.png');
+   background-position:-420px -156px ;
+}
+.social li+li+li>a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 2px;
+   background: url('../img/css_sprites.png');
+   background-position:-420px -186px ;
 }
 .contact .wrapper::before{
     content: '';
@@ -945,16 +952,40 @@ margin: 0 0 15px 0;
     height: 80px;
     background-color: black;
 }
+.menu_contacts li{
+    position: relative;
+    padding: 0 0 0 57px;
+}
+.menu_contacts li::before{
+content: '';
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: 42px;
+height: 42px;
+background: url('../img/css_sprites.png');
+background-position: -420px 0;
+}
+.menu_contacts li+li::before{
+    background-position: -420px -42px;
+    }
+    .menu_contacts li+li+li::before{
+        background-position: -420px -84px;
+        }
 /* footer */
 footer{
     background-color: #000000;
     position: relative;
+    pointer-events: none;
+
 }
 footer .wrapper{
     padding: 0 0 35px 0;
     text-align: end;
 }
 footer .wrapper h6{
+
     font-family: Roboto;
 font-size: 12px;
 line-height: 1.2;
