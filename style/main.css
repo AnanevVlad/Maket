@@ -123,7 +123,7 @@ header .wrapper{
     transform: skewY(8deg);
     transform-origin: left;
    min-height: 720px;
-   background: url('../img/background.png')50% no-repeat;
+   background: url('../img/background.jpg')50% no-repeat;
 
 }
 
