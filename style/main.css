@@ -292,6 +292,7 @@ margin: 20px 0 0 0 ;
     font-size: 0;
     z-index: 5;
     color: #ffffff;
+    padding-bottom: 300px;
     
 }
 .gallery .wrapper{
@@ -320,7 +321,7 @@ margin: 20px 0 0 0 ;
     writing-mode: vertical-lr;
     margin: 0 0 0 100px;
 }
-.gallery::before{
+/* .gallery::before{
     content: '';
     position: absolute;
   right:0;
@@ -329,17 +330,18 @@ margin: 20px 0 0 0 ;
   border-left:100vw solid transparent;
   transform: skewY(8deg);
     transform-origin: left;
-}
+} */
 /* "schedule" */
 .schedule{
     padding: 50px 0 300px 0;
     position: relative;
+    z-index: 10;
     transform: translateY(-1px);
     background: radial-gradient(circle, #1f181a 10%, black 100%); 
      overflow: hidden;
      color: #ffffff;
      font-family: Raleway;
-     margin-top: -50px;
+     margin-top: -300px;
 }
 .schedule_ahead{
     padding: 170px 0 0 0 ;
