@@ -125,7 +125,7 @@
                 <h3>schedule</h3>
                 <div class="schedule_calendar">
                     <div class="calendar_head">
-                        <span class="circle">11</span>
+                        <span class="circle" id="circle"></span>
                         <div class="calendar_head_content">
                             <h2>recommend<br>today:</h2>
                             <p>stretching</p>
@@ -247,6 +247,10 @@
         </div>
     </footer>
     <script src="scripts/calendar.js"></script>
+    <script> 
+    let test =document.getElementById('today');
+    document.getElementById('circle').innerHTML=test.textContent
+       </script>
 </body>
 
 </html>

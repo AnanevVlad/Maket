@@ -1,4 +1,5 @@
 
+
   function calendar(id, year, month) {
     var Dlast = new Date(year, month + 1, 0).getDate(),
       D = new Date(year, month, Dlast),
@@ -13,7 +14,7 @@
     }
     for (var i = 1; i <= Dlast; i++) {
        if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-        calendar += '<td class="today">' + i;
+        calendar += '<td class="today" id="today">' + i;
        } else {
          calendar += '<td>' + i;
        }
@@ -40,5 +41,9 @@
   document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
     calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
     
+  let test =document.getElementById('today')
+ test.style.background='green'
+    
   }
-  
+
+ 

@@ -8,7 +8,7 @@ a{
     text-decoration: none;
 }
  .wrapper{
-    width: 1110px;
+    max-width: 1110px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
@@ -124,6 +124,7 @@ header .wrapper{
     transform-origin: left;
    min-height: 720px;
    background: url('../img/background.jpg')50% no-repeat;
+ 
 
 }
 
