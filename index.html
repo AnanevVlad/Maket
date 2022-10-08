@@ -239,6 +239,7 @@
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
             </ul>
+            <div id="map"></div>
         </div>
     </section>
     <footer>
@@ -251,6 +252,11 @@
     let test =document.getElementById('today');
     document.getElementById('circle').innerHTML=test.textContent
        </script>
+         <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+         defer
+       ></script>
+       <script src="scripts/map.tsx"></script>
 </body>
 
 </html>

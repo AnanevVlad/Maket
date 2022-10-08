@@ -1,5 +1,4 @@
 
-
   function calendar(id, year, month) {
     var Dlast = new Date(year, month + 1, 0).getDate(),
       D = new Date(year, month, Dlast),
@@ -40,10 +39,7 @@
         // переключатель плюс месяц
   document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
     calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
-    
-  let test =document.getElementById('today')
- test.style.background='green'
-    
+     
   }
 
  
